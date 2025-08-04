@@ -374,7 +374,7 @@ footer {
 
 /*______________________________________________________________________KeyFrames____________________________________________________________________*/
 /*----------------------------------------------------------------------For Tablets-----------------------------------------------------------------*/
-@media (max-width: 1205px) {
+@media ( max-width: 1205px) {
   /* Adjust overall sections */
   .section_1,
   .section_2 {
@@ -445,6 +445,14 @@ footer {
     width: 100%;
     flex-direction: row;
   }
+    .searchbar input {
+    width: 90%;
+    margin: 20px auto;
+    display: block;
+    font-size: 16px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+  }
 
   footer {
     padding: 30px 10px;
@@ -458,11 +466,11 @@ footer {
     flex-direction: column;
   }
   .header h1{
-    font-size: 30px;
+    font-size: 28px;
   }
   .header h3{
-    font-size: 15px;
-    margin: 10px;
+    font-size: 14px;
+    margin: 8px;
   }
   .actions{
     flex-direction: column;
@@ -479,8 +487,16 @@ footer {
     width: 100%;
     margin-left: 10px;
    }
-   .searchbar input{
-    margin-right: 100px;
-    margin-top: 50px;
+   .output_header{
+    gap: 0px;
    }
+   /* .searchbar input {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    display: block;
+    padding: 10px 15px;
+    font-size: 16px;
+    box-sizing: border-box;
+  } */
 }
