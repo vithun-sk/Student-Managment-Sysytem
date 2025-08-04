@@ -457,6 +457,13 @@ footer {
   .section_1{
     flex-direction: column;
   }
+  .header h1{
+    font-size: 30px;
+  }
+  .header h3{
+    font-size: 15px;
+    margin: 10px;
+  }
   .actions{
     flex-direction: column;
     align-items: center;
@@ -471,5 +478,9 @@ footer {
      display: block;
     width: 100%;
     margin-left: 10px;
+   }
+   .searchbar input{
+    margin-right: 100px;
+    margin-top: 50px;
    }
 }
