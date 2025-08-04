@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character encoding and responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title shown in browser tab -->
+    <title>Student Managment System</title>
+    <!-- Title shown in browser tab -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- Statistics Section: Showing total, active, inactive students -->
+    <section class="section_1">
+        <div class="total_students">
+            <h1 class="total_no">3</h1>
+            <h5>Total Students</h5>
+        </div>
+        <div class="active_students">
+            <h1 class="active_no">2</h1>
+            <h5>Active Students</h5>
+        </div>
+        <div class="inactive_students">
+            <h1 class="inactive_no">1</h1>
+            <h5>Inactive Students</h5>
+        </div>
+    </section>
+<!-- Main container that wraps input and output -->
+    <section class="section_2">
+        <!-- Header section with title and subtitle -->
+        <header class="header">
+            <h1><i class="fas fa-user-graduate floating" style="padding: 10px; font-size: 45px;"></i>Student Managment
+                System</h1>
+            <h3>Add , Manage and Track Student Information</h3>
+        </header>
+         <!-- Form to enter student data -->
+        <main class="main">
+            <div class="input_tag">
+                <div class="input_title">
+                    <h1><i class="fas fa-user-plus"></i> Student Information</h1>
+                </div>
+                <form id="studentForm" action="#" class="input_informations">
+                    <div class="inputs"> <!-- Full name input -->
+                        <h1 class="input_header"><i class="fas fa-user"></i>Full name</h1>
+                        <input type="text" class="input_name" placeholder="Enter Full Name" required>
+                    </div>
+                    <div class="inputs"> <!-- Age input -->
+                        <h1 class="input_header"><i class="fas fa-birthday-cake"></i> Age</h1>
+                        <input type="number" class="input_age" placeholder="Enter Age" min="15" max="60" required>
+                    </div>
+                    <div class="inputs"> <!-- ID input -->
+                        <h1 class="input_header"><i class="fas fa-id-card"></i>Student ID</h1>
+                        <input type="text" class="input_id" placeholder="Enter Student ID" required>
+                    </div>
+                    <div class="inputs"> <!-- Email input -->
+                        <h1 class="input_header"><i class="fas fa-envelope"></i>Email</h1>
+                        <input type="email" class="input_email" placeholder="Enter Email Address" required>
+                    </div>
+                    <div class="inputs"> <!-- Mobile Number input -->
+                        <h1 class="input_header"><i class="fas fa-phone"></i> Phone Number</h1>
+                        <input type="tel" class="input_mobilenumber" placeholder="Enter 10 digit phone number"
+                            pattern="[0-9]{10}" maxlength="10" required>
+                    </div>
+                    <div class="inputs"> <!-- Gender input -->
+                        <h1 class="input_header"><i class="fas fa-venus-mars"></i>Gender</h1>
+                        <select class="input_gender" style="padding: 10px;" required>
+                            <option value="">--Select Gender--</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Others</option>
+                        </select>
+                    </div>
+                    <div class="inputs"> <!-- Course input -->
+                        <h1 class="input_header"><i class="fas fa-book"></i>Course</h1>
+                        <select class="input_course" style="padding: 10px;" required>
+                            <option value="">--Select Course--</option>
+                            <option value="Computer Science Engineering">Computer Science Engineering</option>
+                            <option value="Cyber Security">Cyber Security</option>
+                            <option value="Electrical Engineering">Electrical Engineering</option>
+                            <option value="Business Administration">Business Administration</option>
+                            <option value="Medical">Medical</option>
+                        </select>
+                    </div>
+                    <div class="inputs"> <!-- Address input -->
+                        <h1 class="input_header"><i class="fas fa-home"></i>Address</h1>
+                        <textarea class="input_address" placeholder="Enter Address" rows="3" required></textarea>
+                    </div>
+                    <div class="inputs"> <!-- Status input -->
+                        <h1 class="input_header"><i class="fas fa-check-circle"></i>Status</h1>
+                        <select class="input_status" style="padding: 10px;" required>
+                            <option value="">--Select Status--</option>
+                            <option value="Active">Active</option>
+                            <option value="Inactive">Inactive</option>
+                        </select>
+                    </div>
+                    <div class="actions"> <!--  Save and Reset button -->
+                        <button type="submit" class="save_btn" onclick="save(event)"><i class="fas fa-save"
+                                style="padding-right: 10px;"></i> Save
+                            Student</button>
+                        <button type="reset" class="reset_btn" onclick="reset()"><i class="fas fa-redo"
+                                style="padding-right: 10px;"></i>Reset</button>
+                    </div>
+                </form>
+            </div>
+              <!-- Display section for student records -->
+            <div class="output_informations">
+                 <!-- Table header with title and search bar -->
+                <section class="output_header">
+                    <div class="output_title">
+                        <h1><i class="fas fa-list" style="padding: 5px; margin-right: 5px;"></i>Student
+                            Records</h1>
+                    </div>
+                    <div class="searchbar">
+                        <input id="searchInput" class="search_content" type="text" placeholder="🔍  Search"
+                            oninput="search_details()">
+                    </div>
+                </section>
+                <!-- Table content area -->
+                <section class="table">
+                    <table>
+                        <thead class="table_head">
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Course</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table_body">
+                            <!-- Student records will appear here -->
+                        </tbody>
+                    </table>
+                    <!-- Message when no records are available -->
+                    <div class="empty_state">
+                        <i class="fas fa-user-graduate"></i>
+                        <p>No student records found. Add a student to get started!</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </section>
+ <!-- Footer section -->
+    <footer>
+        <p>Student Management System &copy; 2025 | Created with HTML, CSS & JavaScript</p>
+    </footer>
+     <!-- JavaScript file for functionality -->
+    <script src="index.js"></script>
+</body>
+
+</html>
