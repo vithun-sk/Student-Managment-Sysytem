@@ -439,6 +439,9 @@ footer {
     justify-content: flex-start;
     gap: 15px;
   }
+  .inputs{
+    margin-left: 20px;
+  }
 
   .save_btn,
   .reset_btn {
@@ -488,15 +491,7 @@ footer {
     margin-left: 10px;
    }
    .output_header{
-    gap: 0px;
+    gap: 10px;
    }
-   /* .searchbar input {
-    width: 90%;
-    max-width: 400px;
-    margin: 20px auto;
-    display: block;
-    padding: 10px 15px;
-    font-size: 16px;
-    box-sizing: border-box;
-  } */
+   
 }
