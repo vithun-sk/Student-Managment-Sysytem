@@ -32,42 +32,12 @@ Welcome to my **Student Management System** — a web application built using pu
 ## 📁 Folder Structure
 
 /Student-Management-System
-
 ├── index.html # Main page
-
 ├── style.css # Stylesheet
-
 ├── index.js # Main script file
-
 └── README.md # Project documentation
 
-
-
-
-🌐 Deployment
-This project is deployed on GitHub Pages.
-🔗 https://vithun-sk.github.io/Student-Managment-Sysytem/
-
-
-📩 Contact Me
-📧 Email: vithunkumar07@gmail.com
-
-💼 LinkedIn: linkedin.com/in/vithun-sk
-
-💻 GitHub: github.com/vithun-sk
-
-
-
-
-
-📃 License
-This project is open-source and available under the MIT License.
-
-
-
-📝 Acknowledgements
-Thanks for visiting my project!
-Feel free to share feedback or contributions — always welcome.
+---
 
 ## 🧑‍💻 How to Run Locally
 
@@ -75,6 +45,24 @@ Feel free to share feedback or contributions — always welcome.
 git clone https://github.com/vithun-sk/Student-Managment-Sysytem.git
 cd Student-Managment-Sysytem
 
+Open index.html in your browser.
 
----
+🌐 Deployment
+This project is deployed on GitHub Pages.
+🔗 https://vithun-sk.github.io/Student-Managment-Sysytem/
 
+📩 Contact Me
+📧 Email: vithunkumar07@gmail.com
+💼 LinkedIn: linkedin.com/in/vithun-sk
+💻 GitHub: github.com/vithun-sk
+
+📃 License
+This project is open-source and available under the MIT License.
+
+📝 Acknowledgements
+Thanks for visiting my project!
+Feel free to share feedback or contributions — always welcome.
+
+yaml
+Copy
+Edit
