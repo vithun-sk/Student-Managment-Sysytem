@@ -493,5 +493,8 @@ footer {
    .output_header{
     gap: 10px;
    }
+   .output_title h1{
+    font-size: 18px;
+   }
    
 }
