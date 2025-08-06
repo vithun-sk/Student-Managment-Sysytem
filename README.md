@@ -50,10 +50,12 @@ This project is deployed on GitHub Pages.
 
 
 📩 Contact Me
-
 📧 Email: vithunkumar07@gmail.com
+
 💼 LinkedIn: linkedin.com/in/vithun-sk
+
 💻 GitHub: github.com/vithun-sk
+
 
 
 
