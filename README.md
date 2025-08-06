@@ -42,28 +42,26 @@ Welcome to my **Student Management System** — a web application built using pu
 └── README.md # Project documentation
 
 
----
+
 
 🌐 Deployment
 This project is deployed on GitHub Pages.
 🔗 https://vithun-sk.github.io/Student-Managment-Sysytem/
 
 
----
-
 📩 Contact Me
+
 📧 Email: vithunkumar07@gmail.com
 💼 LinkedIn: linkedin.com/in/vithun-sk
 💻 GitHub: github.com/vithun-sk
 
 
----
+
 
 📃 License
 This project is open-source and available under the MIT License.
 
 
----
 
 📝 Acknowledgements
 Thanks for visiting my project!
