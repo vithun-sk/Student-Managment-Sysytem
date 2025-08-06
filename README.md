@@ -32,19 +32,14 @@ Welcome to my **Student Management System** — a web application built using pu
 ## 📁 Folder Structure
 
 /Student-Management-System
+
 ├── index.html # Main page
+
 ├── style.css # Stylesheet
+
 ├── index.js # Main script file
+
 └── README.md # Project documentation
-
-
----
-
-## 🧑‍💻 How to Run Locally
-
-```bash
-git clone https://github.com/vithun-sk/Student-Managment-Sysytem.git
-cd Student-Managment-Sysytem
 
 
 ---
@@ -73,3 +68,13 @@ This project is open-source and available under the MIT License.
 📝 Acknowledgements
 Thanks for visiting my project!
 Feel free to share feedback or contributions — always welcome.
+
+## 🧑‍💻 How to Run Locally
+
+```bash
+git clone https://github.com/vithun-sk/Student-Managment-Sysytem.git
+cd Student-Managment-Sysytem
+
+
+---
+
